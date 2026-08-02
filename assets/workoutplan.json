@@ -1,0 +1,817 @@
+{
+    "name": "Upper Lower",
+    "frequency": 5,
+    "cycle": [
+        "Upper 1",
+        "Lower 1",
+        "Rest 1",
+        "Upper 2",
+        "Lower 2",
+        "Upper 3",
+        "Rest 2"
+    ],
+    "startDate": "2026-07-06",
+    "weeks": {
+        "2026-W28": {
+            "Upper 1": false,
+            "Lower 1": false,
+            "Upper 2": false,
+            "Lower 2": false,
+            "Upper 3": false
+        }
+    },
+    "days": {
+        "Upper 1": {
+            "Bench Press": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 13
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    }
+                ]
+            },
+            "Pull Ups": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    }
+                ]
+            },
+            "Dips": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    }
+                ]
+            },
+            "Cable Rows": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    }
+                ]
+            },
+            "Tricep Extensions": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    }
+                ]
+            },
+            "Bicep Curls": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 11
+                        }
+                    }
+                ]
+            }
+        },
+        "Lower 1": {
+            "Squats": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    }
+                ]
+            },
+            "Romanian Deadlift": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    }
+                ]
+            },
+            "Leg Press": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            },
+            "Leg Curl": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            },
+            "Calf Raises": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    }
+                ]
+            },
+            "Hanging Leg Raises": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    }
+                ]
+            }
+        },
+        "Rest 1": {},
+        "Upper 2": {
+            "Incline Bench Press": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    }
+                ]
+            },
+            "Lat Pulldown": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    }
+                ]
+            },
+            "Seated Shoulder Press": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    }
+                ]
+            },
+            "Chest Supported Row": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            },
+            "Lateral Raises": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    }
+                ]
+            },
+            "Hammer Curls": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            }
+        },
+        "Lower 2": {
+            "Deadlift": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 5
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 5
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 5
+                        }
+                    }
+                ]
+            },
+            "Hack Squat": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    }
+                ]
+            },
+            "Bulgarian Split Squat": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    }
+                ]
+            },
+            "Leg Extension": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            },
+            "Seated Leg Curl": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            },
+            "Standing Calf Raises": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    }
+                ]
+            }
+        },
+        "Upper 3": {
+            "Machine Chest Press": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 10
+                        }
+                    }
+                ]
+            },
+            "Weighted Pull Ups": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 8
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 8
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 8
+                        }
+                    }
+                ]
+            },
+            "Cable Fly": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            },
+            "Single Arm Row": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            },
+            "Face Pulls": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 15
+                        }
+                    }
+                ]
+            },
+            "EZ Bar Curls": {
+                "type": "",
+                "sets": [
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    },
+                    {
+                        "weight": 0,
+                        "reps": {
+                            "weight": 0,
+                            "reps": 12
+                        }
+                    }
+                ]
+            }
+        },
+        "Rest 2": {}
+    }
+}
