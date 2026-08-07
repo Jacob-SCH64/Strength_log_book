@@ -39,6 +39,10 @@ class WorkoutPlan {
       }),
     );
   }
+
+  Map<String, Exercise> getExercisesForDay(String dayName) {
+    return days[dayName] ?? {};
+  }
 }
 
 int getCurrentIndex(WorkoutPlan plan) {

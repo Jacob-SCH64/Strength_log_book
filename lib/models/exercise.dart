@@ -22,6 +22,18 @@ class Exercise {
       sets: sets ?? this.sets,
     );
   }
+
+  void addRep(Exercise exercise, int setIndex) {
+    final oldSet = exercise.sets[setIndex];
+
+    //+1 could also be changed to the user input
+    final newSet = oldSet.copyWith(reps: oldSet.reps + 1);
+
+    final newSets = [...exercise.sets];
+    newSets[setIndex] = newSet;
+
+    final updateExercise = exercise.copyWith(sets: newSets);
+  }
 }
 
 class ExerciseSet {
@@ -35,6 +47,10 @@ class ExerciseSet {
       weight: (json['weight'] ?? 0).toDouble(),
       reps: json['reps'],
     );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {'weight': weight, 'reps': reps};
   }
 
   ExerciseSet copyWith({double? weight, int? reps}) {

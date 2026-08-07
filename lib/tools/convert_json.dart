@@ -12,43 +12,28 @@ void main() {
     final exerciseMap = exercises as Map<String, dynamic>;
 
     exerciseMap.forEach((exerciseName, value) {
-
       // Already converted correctly
-      if (value is Map &&
-          value.containsKey('sets')) {
+      if (value is Map && value.containsKey('sets')) {
         return;
       }
 
       // Convert old format:
       // "Exercise": [11,11,11]
       if (value is List) {
-
         exerciseMap[exerciseName] = {
           "type": "",
           "sets": value.map((rep) {
-
             // Fix partially converted sets
             if (rep is Map) {
-              return {
-                "weight": rep['weight'] ?? 0,
-                "reps": rep['reps'] ?? 0
-              };
+              return {"weight": rep['weight'] ?? 0, "reps": rep['reps'] ?? 0};
             }
 
-            return {
-              "weight": 0,
-              "reps": rep
-            };
-
-          }).toList()
+            return {"weight": 0, "reps": rep};
+          }).toList(),
         };
       }
     });
   });
 
-  file.writeAsStringSync(
-    const JsonEncoder.withIndent('    ').convert(data),
-  );
-
-  print("Fixed workout JSON!");
+  file.writeAsStringSync(const JsonEncoder.withIndent('    ').convert(data));
 }

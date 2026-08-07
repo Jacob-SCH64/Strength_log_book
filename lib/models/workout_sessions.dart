@@ -1,3 +1,4 @@
+//Plan where all the exercises are in for the workout
 class WorkoutSession {
   final DateTime date;
   final String dayName;

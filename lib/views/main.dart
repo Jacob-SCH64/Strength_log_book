@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:strength_log_book/models/workout_plan.dart';
+import 'package:strength_log_book/services/storage_service.dart';
 import 'package:strength_log_book/views/workout.dart';
 
 void main() => runApp(const MyApp());
@@ -42,13 +43,23 @@ class _MyLandingPageState extends State<MyLandingPage> {
   }
 
   Future<void> loadPlan() async {
-    final jsonString = await rootBundle.loadString('assets/workoutPlan.json');
+    Map<String, dynamic>? data;
 
-    final data = jsonDecode(jsonString);
-    final loadedPlan = WorkoutPlan.fromJson(data);
+    data = await StorageService.loadWorkoutPlan();
+
+    if (data == null) {
+      final jsonString = await rootBundle.loadString('assets/workoutPlan.json');
+
+      data = jsonDecode(jsonString) as Map<String, dynamic>;
+
+      await StorageService.saveWorkoutPlan(data);
+    }
+
+    final loadPlan = WorkoutPlan.fromJson(data);
+
     setState(() {
-      plan = loadedPlan;
-      currentIndex = getCurrentIndex(loadedPlan);
+      plan = loadPlan;
+      currentIndex = getCurrentIndex(loadPlan);
     });
   }
 
@@ -88,7 +99,7 @@ class _MyLandingPageState extends State<MyLandingPage> {
                           MaterialPageRoute(
                             builder: (_) => Workoutday(
                               dayName: day,
-                              exercisesList: plan!.days[day]!,
+                              exercisesList: plan!.getExercisesForDay(day),
                             ),
                           ),
                         );
