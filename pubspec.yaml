@@ -29,6 +29,10 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   path_provider: ^2.1.4
+  numberpicker: ^2.1.2
+  isar: ^3.1.0
+  isar_flutter_libs: ^3.1.0
+
   flutter:
     sdk: flutter
 
@@ -37,6 +41,8 @@ dependencies:
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
+  isar_generator: ^3.1.0
+  build_runner: ^2.4.0
   flutter_test:
     sdk: flutter
 

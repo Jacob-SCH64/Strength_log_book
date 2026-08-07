@@ -23,29 +23,31 @@ class Exercise {
     );
   }
 
-  void addRep(Exercise exercise, int setIndex) {
-    final oldSet = exercise.sets[setIndex];
+  Exercise addRep(int setIndex, double reps) {
+    final newSets = [...sets];
+    newSets[setIndex] = newSets[setIndex].copyWith(reps: reps);
 
-    //+1 could also be changed to the user input
-    final newSet = oldSet.copyWith(reps: oldSet.reps + 1);
+    return copyWith(sets: newSets);
+  }
 
-    final newSets = [...exercise.sets];
-    newSets[setIndex] = newSet;
+  Exercise updateWeight(int setIndex, double weight) {
+    final newSets = [...sets];
+    newSets[setIndex] = newSets[setIndex].copyWith(weight: weight);
 
-    final updateExercise = exercise.copyWith(sets: newSets);
+    return copyWith(sets: newSets);
   }
 }
 
 class ExerciseSet {
   final double weight;
-  final int reps;
+  final double reps;
 
   const ExerciseSet({required this.weight, required this.reps});
 
   factory ExerciseSet.fromJson(Map<String, dynamic> json) {
     return ExerciseSet(
       weight: (json['weight'] ?? 0).toDouble(),
-      reps: json['reps'],
+      reps: json['reps'].toDouble(),
     );
   }
 
@@ -53,7 +55,7 @@ class ExerciseSet {
     return {'weight': weight, 'reps': reps};
   }
 
-  ExerciseSet copyWith({double? weight, int? reps}) {
+  ExerciseSet copyWith({double? weight, double? reps}) {
     return ExerciseSet(weight: weight ?? this.weight, reps: reps ?? this.reps);
   }
 }

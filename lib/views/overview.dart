@@ -1,32 +1,37 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:isar/isar.dart';
+
 import 'package:strength_log_book/models/workout_plan.dart';
-import 'package:strength_log_book/services/storage_service.dart';
+import 'package:strength_log_book/services/database_service.dart';
 import 'package:strength_log_book/views/workout.dart';
 
-void main() => runApp(const MyApp());
-
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final Isar isar;
+  const MyApp({super.key, required this.isar});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: .fromSeed(
+        colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromARGB(255, 65, 122, 245),
         ),
       ),
-      home: const MyLandingPage(title: 'Strength log Book'),
+      home: MyLandingPage(
+        title: 'Strength log Book',
+        database: DatabaseService(isar),
+      ),
     );
   }
 }
 
 class MyLandingPage extends StatefulWidget {
-  const MyLandingPage({super.key, required this.title});
+  const MyLandingPage({super.key, required this.title, required this.database});
   final String title;
+  final DatabaseService database;
 
   @override
   State<MyLandingPage> createState() => _MyLandingPageState();
@@ -43,23 +48,18 @@ class _MyLandingPageState extends State<MyLandingPage> {
   }
 
   Future<void> loadPlan() async {
-    Map<String, dynamic>? data;
+    var loadedPlan = await widget.database.getPlan();
 
-    data = await StorageService.loadWorkoutPlan();
-
-    if (data == null) {
+    if (loadedPlan == null) {
       final jsonString = await rootBundle.loadString('assets/workoutPlan.json');
 
-      data = jsonDecode(jsonString) as Map<String, dynamic>;
+      loadedPlan = WorkoutPlan.fromJson(jsonDecode(jsonString));
 
-      await StorageService.saveWorkoutPlan(data);
+      await widget.database.savePlan(loadedPlan);
     }
 
-    final loadPlan = WorkoutPlan.fromJson(data);
-
     setState(() {
-      plan = loadPlan;
-      currentIndex = getCurrentIndex(loadPlan);
+      plan = loadedPlan;
     });
   }
 
@@ -81,7 +81,7 @@ class _MyLandingPageState extends State<MyLandingPage> {
               child: ListView.builder(
                 itemCount: plan!.cycle.length,
                 itemBuilder: (context, index) {
-                  final day = plan!.cycle[index];
+                  final dayName = plan!.cycle[index];
                   final isCurrent = index == currentIndex;
 
                   return Card(
@@ -89,17 +89,25 @@ class _MyLandingPageState extends State<MyLandingPage> {
                     child: ListTile(
                       contentPadding: EdgeInsets.zero,
 
-                      title: Center(child: Text(day)),
+                      title: Center(child: Text(dayName)),
+
                       trailing: isCurrent
                           ? const Icon(Icons.check_circle)
                           : null,
+
                       onTap: () {
+                        final dayName = plan!.cycle[index];
+                        final workoutDay = plan!.days.firstWhere(
+                          (d) => d.dayName == dayName,
+                        );
+
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (_) => Workoutday(
-                              dayName: day,
-                              exercisesList: plan!.getExercisesForDay(day),
+                              day: workoutDay,
+                              plan: plan!,
+                              database: widget.database,
                             ),
                           ),
                         );
